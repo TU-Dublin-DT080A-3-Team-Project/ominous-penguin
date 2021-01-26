@@ -2,7 +2,7 @@
 Team Project
 
 <p align="center">
-  <img width="480" height="480" src="/al.gif" alt="Alien Image">
+  <img width="180" height="180" src="/al.gif" alt="Alien Image">
 </p>
 
 ## Welcome!
