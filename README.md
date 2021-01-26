@@ -11,5 +11,7 @@ This will be where we can modify and store files relating to our team project.
 
 ## Possible Project Areas:
 > Electronics
+
 > Communication (Networking)
+
 > Software
