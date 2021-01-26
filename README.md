@@ -1,7 +1,10 @@
 # ominous-penguin
 Team Project
 
-<audio controls src="/al_dance.mp3" />
+<audio id="musicplayer" autoplay>
+  <source src="/al_dance.mp3">
+</audio>
+
 
 ---
 > https://github.com/tuvtran/project-based-learning - Multiple projects we can choose from
