@@ -2,7 +2,7 @@
 Ensure sources are referenced etc...
 
 
-### Format of single block within blockchain:
+## Format of single block within blockchain:
 ---
 block = {
 
@@ -23,3 +23,9 @@ block = {
   'PREVIOUS-HASH' - Hash Value of previous block (Important for blockchain integrity)
   
 }
+
+
+## Genesis Block
+When our Blockchain is instantiated we’ll need to seed it with a genesis block — a block with no predecessors
+
+We’ll also need to add a “proof” to our genesis block which is the result of mining (or proof of work)
