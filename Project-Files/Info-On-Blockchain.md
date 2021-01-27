@@ -1,16 +1,25 @@
-### This file can be used to store any information relating to blockchains & cryptocurrency that we can use for our project report ###
+# This file can be used to store any information relating to blockchains & cryptocurrency that we can use for our project report ###
 Ensure sources are referenced etc...
 
 
-# Format of single block within blockchain:
+### Format of single block within blockchain:
+---
 block = {
+
   'INDEX' - Positional index in blockchain
-  'TIMESTAMP' - 
+  
+  'TIMESTAMP' - Timestamp allocated to transaction
+  
   'TRANSACTION'{
+  
     'SENDER' - Address of Sender
+    
     'RECIPIENT' - Address of Recipient
-    'AMOUNT' - Transaction Amount
-  }
+    
+    'AMOUNT' - Transaction Amount}
+  
   'PROOF' - Produced by Proof of Work Algorithm
+  
   'PREVIOUS-HASH' - Hash Value of previous block (Important for blockchain integrity)
+  
 }
