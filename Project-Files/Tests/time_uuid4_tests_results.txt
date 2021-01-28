@@ -1,0 +1,12 @@
+UUID4 TEST (Will generate unique values each time)
+--------------------------
+Unique ID 0 5bbb02627f1a4614882b7534bf3d19f8
+Unique ID 1 14c7469a3e05482ca8934c31e0cad312
+Unique ID 2 0e73a1b5f675403380f6fa396be7e27f
+Unique ID 3 12702f87611a4ff0a4b955a3e02a9fc2
+Unique ID 4 52972bfd20b34efb9a0ba472ff507dbb
+
+
+TIME TEST (Will create updated timestamp each time)
+---------------------------
+Timestamp: 1611856065.104816
