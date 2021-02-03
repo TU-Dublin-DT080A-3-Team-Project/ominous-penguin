@@ -9,3 +9,9 @@
 > https://www.youtube.com/watch?v=SSo_EIwHSd4&ab_channel=SimplyExplained - How a Blockchain Works
 
 > https://docs.python.org/3/library/hashlib.html - Python Hashlib
+
+> https://www.digitalocean.com/community/tutorials/how-to-make-a-web-application-using-flask-in-python-3 - Basic functionality of Flask App
+
+> https://flask.palletsprojects.com/en/0.12.x/quickstart/#a-minimal-application - Basic functionality of Flask App
+
+> https://flask.palletsprojects.com/en/0.12.x/api/#flask.Flask.route - Flask.route()
