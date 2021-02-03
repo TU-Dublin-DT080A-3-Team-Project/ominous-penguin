@@ -1,0 +1,84 @@
+
+
+
+div header {
+    border: 6px solid black;
+    border-radius: 8px;
+    color: white;
+    background: url("../img/tech1.gif") no-repeat center;
+    background-size: cover;
+    padding: 6%;
+    text-align: center;
+}
+
+
+h1 {
+    margin: 0;
+}
+h2 {
+    margin: 0;
+}
+
+nav {
+    background-color: #ccffcc;
+    border: 6px solid black;
+    border-radius: 8px;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+}
+.navbar {
+    overflow: hidden;
+    text-align: center;
+}
+.navbar li {
+    list-style-type: none;
+    display: inline-block;
+    padding-right: 10%;
+    float:none;
+}
+.navbar li a {
+        font-weight: bold;
+        text-shadow: 2px 2px black;
+        color: coral;
+        text-decoration: none;
+}
+    .navbar li a.active {
+        color: white;
+    }
+
+
+.main_content {
+    color: white;
+    border: 6px solid black;
+    border-radius: 8px;
+    font-size: 150%;
+    padding: 8.5%;
+    background: url("../img/giphy8.gif") no-repeat center;
+    background-size: cover;
+    text-align: center;
+}
+.education_main_content {
+    color: white;
+    border: 6px solid black;
+    border-radius: 8px;
+    font-size: 150%;
+    padding: 6%;
+    background: url("../img/planets.gif") no-repeat center;
+    background-size: cover;
+    text-align: center;
+}
+
+footer {
+    border: 6px solid black;
+    border-radius: 8px;
+    font-size: 150%;
+    text-align: center;
+    font-weight: bold;
+    background-color: #ccffcc;
+    padding: 2%;
+}
+
+html {
+    background-color: black;
+}
