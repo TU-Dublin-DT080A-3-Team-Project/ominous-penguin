@@ -1,0 +1,63 @@
+﻿<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Homepage</title>
+    <meta charset ="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta description ="index">
+    <meta author ="Jonathan Mooney">
+
+    <link rel="stylesheet" href="../static/css/style1.css">
+</head>
+
+
+<body>
+    <div>
+        <header>
+            <h1>Car Mileage Blockchain Project</h1>
+            <h2>Interface</h2>
+        </header>
+    </div>
+
+
+    <nav>
+        <div class="navbar">
+            <ul>
+                <li><a class="active" href="{{ url_for('index') }}"><h2>Homepage</h2></a></li>
+                <li><a href="{{ url_for('full_record') }}"><h2>Blockchain</h2></a></li>
+                <li><a href="{{ url_for('login') }}"><h2>Add Block</h2></a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="main_content">
+        <div>Blockchain Project<br> Click on an above navigation link to view a relevant section of the site.</div>
+        <br>
+        <div>
+			<p>Web interface for working with Blockchain infrastructure 
+			implemented though Python Flask server. <br><br>
+			The Blockchain infrastructure at work here is 
+			semi-decentralized, only authorized personnel can add 
+			records to the chain, but the entire blockchain itself is 
+			publicly accessible.<br><br>
+			The records contained within this Blockchain relate to 
+			vehicle mileage information, this provides a simplistic 
+			structure to the overall chain which is easy to use and 
+			comprehend.<br><br>
+			The Blockchain page is publicly accessible, while the 
+			Add Block section is reserved for authenticated personnel 
+			only.
+			</p>
+		</div>
+    </section>
+
+
+    <footer>Copyright &copy; DT080A Team Project</footer>
+
+
+</body>
+
+
+
+</html>

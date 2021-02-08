@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en"> 
+<head>
+    <title>Auth Login</title>
+    <meta charset ="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta description ="index">
+    <meta author ="Jonathan Mooney">
+
+    <link rel="stylesheet" href="../static/css/style1.css">
+</head>
+
+<body>
+    <div>
+        <header>
+            <h1>Car Mileage Blockchain Project</h1>
+            <h2>Interface</h2>
+        </header>
+    </div>
+
+    <nav>
+        <div class="navbar">
+            <ul>
+                <li><a href="{{ url_for('index') }}"><h2>Homepage</h2></a></li>
+                <li><a href="{{ url_for('full_record') }}"><h2>Blockchain</h2></a></li>
+                <li><a class="active" href="{{ url_for('login') }}"><h2>Add Block</h2></a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="add_record_main_content">
+		<div> 
+            <h1>Authorized Access Only!</h1>
+        </div>
+		{% if error %}
+		<p class=error><strong>Error:</strong> {{ error }}
+		{% endif %}
+		
+	<form method=post>
+		<dl>
+			<dt>Username:
+			<dd><input type=text name=username>
+			<dt>Password:
+			<dd><input type=password name=password>
+		</dl>
+		<p><input type=submit value=Login>
+	</form>
+    </section>
+
+    <footer>Copyright &copy; 2021 DT080A Team Project</footer>
+
+</body>

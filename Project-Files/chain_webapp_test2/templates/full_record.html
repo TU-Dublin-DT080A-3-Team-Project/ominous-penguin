@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Blockchain</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta description="full_record">
+    <meta author="Jonathan Mooney">
+
+    <link rel="stylesheet" href="../static/css/style1.css" />
+</head>
+
+<body>
+    <div>
+        <header>
+            <h1>Car Mileage Blockchain Project</h1>
+            <h2>Interface</h2>
+        </header>
+    </div>
+
+    <nav>
+        <div class="navbar">
+            <ul>
+                <li><a href="{{ url_for('index') }}"><h2>Homepage</h2></a></li>
+                <li><a class="active" href="{{ url_for('full_record') }}"><h2>Blockchain</h2></a></li>
+                <li><a href="{{ url_for('login') }}"><h2>Add Block</h2></a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="full_record_main_content">
+        <div> 
+            <h1>Full Blockchain</h1>
+            <p>Below is the full blockchain with all information in it:</p>
+            <ul>
+				<li>Block: Block Number</li>
+				<li>Timestamp: Date Block Was Created</li>
+				<li>Records: Information Contained Within Block</li>
+				<li>Proof: Proof Generated From Previous Block</li>
+				<li>Prev_Hash: Hash Value of Previous Block</li><br>
+				<li>Length: Total number of blocks in chain</li>
+            </ul>
+            <p>Use Ctrl+F to search for specific information</p>
+        </div>
+    </section>
+    
+		<div class="container"></div>
+			<script>
+			const jsondata = JSON.parse({{jsondata|tojson}});
+			document.querySelector(".container").innerHTML = "<pre>"+JSON.stringify(jsondata, null, 4)+"</pre>";
+			</script>
+
+    <footer>Copyright &copy; 2021 DT080A Team Project</footer>
+
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en"> 
+<head>
+    <title>Add Block</title>
+    <meta charset ="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta description ="index">
+    <meta author ="Jonathan Mooney">
+
+    <link rel="stylesheet" href="../static/css/style1.css">
+</head>
+
+<body>
+    <div>
+        <header>
+            <h1>Car Mileage Blockchain Project</h1>
+            <h2>Interface</h2>
+        </header>
+    </div>
+
+    <nav>
+        <div class="navbar">
+            <ul>
+                <li><a href="{{ url_for('index') }}"><h2>Homepage</h2></a></li>
+                <li><a href="{{ url_for('full_record') }}"><h2>Blockchain</h2></a></li>
+                <li><a class="active" href="{{ url_for('login') }}"><h2>Add Block</h2></a></li>
+            </ul>
+        </div>
+    </nav>
+
+
+	<section class="add_record_main_content">
+		<p>Enter all relevant information for vehicle record<br>
+		When all records have been added select "Create Block" to add
+		to Blockchain.
+		</p>
+		{% if error %}
+		<p class=error><strong>Error:</strong> {{ error }}
+		{% endif %}
+		
+		{% with messages = get_flashed_messages() %}
+			{% if messages %}
+				<ul class=flashes>
+			{% for message in messages %}
+			`	<li>{{ message }}</li>
+			{% endfor %}
+				</ul>
+			{% endif %}
+		{% endwith %}
+		{% block body %}{% endblock %}
+
+	<form method=post>
+		<dl>
+			<dt>Car Model:
+			<dd><input type=text name=car_model value="{{
+			request.form.car_model }}">
+			<hr>
+			<dt>Chassis Number:
+			<dd><input type=text name=chassis_number>
+			<hr>
+			<dt>Mileage (Km):
+			<dd><input type=number name=mileage>
+			<hr>
+		</dl>
+		<p><input type=submit value=Submit />  <input type=button value="Create Block" onclick="window.location='/add_block';" /></p>
+	</form>
+    </section>
+
+    <footer>Copyright &copy; 2021 DT080A Team Project</footer>
